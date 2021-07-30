@@ -9,18 +9,37 @@ wait(2)
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
+local incognito = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
-local MenuName = Instance.new("TextLabel")
+local Incognito = Instance.new("TextLabel")
+local MainScripts = Instance.new("TextButton")
+local MainScripts_2 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local Mainscripts = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local More = Instance.new("TextButton")
+local NoclipZ = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local Teleports = Instance.new("TextButton")
+local qtotp = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
-local Credits = Instance.new("TextLabel")
+local Teleports = Instance.new("TextButton")
+local Teleports_2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Burger = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local AdminBaseSoonFixed = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Gunshop = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local School = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local HighArmor = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local OtherScripts = Instance.new("TextButton")
+local OtherScripts_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local line = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 
 
 
@@ -29,96 +48,254 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
 Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Main.Position = UDim2.new(0.235661402, 0, 0.118834339, 0)
-Main.Size = UDim2.new(0, 646, 0, 327)
-Main.Active = true
-Main.Draggable = true
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.Position = UDim2.new(0.323832631, 0, 0.240490824, 0)
+Main.Size = UDim2.new(0, 720, 0, 387)
 
-UICorner.Parent = Main
+incognito.Name = "incognito"
+incognito.Parent = Main
+incognito.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+incognito.Position = UDim2.new(0.0101718474, 0, 0.0180878546, 0)
+incognito.Size = UDim2.new(0, 122, 0, 373)
 
-Frame.Parent = Main
-Frame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-Frame.Position = UDim2.new(0.0185758509, 0, 0.0305810403, 0)
-Frame.Size = UDim2.new(0, 132, 0, 308)
-Main.Draggable = true
+UICorner.CornerRadius = UDim.new(0, 6)
+UICorner.Parent = incognito
 
-MenuName.Name = "MenuName"
-MenuName.Parent = Frame
-MenuName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MenuName.BackgroundTransparency = 1.000
-MenuName.Position = UDim2.new(0.02399005, 0, 0.0324675329, 0)
-MenuName.Size = UDim2.new(0, 128, 0, 40)
-MenuName.Font = Enum.Font.SciFi
-MenuName.Text = "Incognito"
-MenuName.TextColor3 = Color3.fromRGB(255, 255, 255)
-MenuName.TextScaled = true
-MenuName.TextSize = 14.000
-MenuName.TextWrapped = true
+Incognito.Name = "Incognito"
+Incognito.Parent = incognito
+Incognito.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Incognito.BackgroundTransparency = 1.000
+Incognito.Position = UDim2.new(0.0446406081, 0, 0, 0)
+Incognito.Size = UDim2.new(0, 111, 0, 50)
+Incognito.Font = Enum.Font.SourceSansBold
+Incognito.Text = "Incognito"
+Incognito.TextColor3 = Color3.fromRGB(255, 255, 255)
+Incognito.TextScaled = true
+Incognito.TextSize = 14.000
+Incognito.TextWrapped = true
 
-UICorner_2.Parent = Frame
-
-Mainscripts.Name = "Mainscripts"
-Mainscripts.Parent = Frame
-Mainscripts.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Mainscripts.Position = UDim2.new(0.0391415693, 0, 0.255709112, 0)
-Mainscripts.Size = UDim2.new(0, 120, 0, 44)
-Mainscripts.Font = Enum.Font.SciFi
-Mainscripts.Text = "Main Scripts"
-Mainscripts.TextColor3 = Color3.fromRGB(255, 255, 255)
-Mainscripts.TextSize = 21.000
-Mainscripts.TextWrapped = true
-
-UICorner_3.Parent = Mainscripts
-
-More.Name = "More"
-More.Parent = Frame
-More.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-More.Position = UDim2.new(0.0391415693, 0, 0.427787036, 0)
-More.Size = UDim2.new(0, 120, 0, 44)
-More.Font = Enum.Font.SciFi
-More.Text = "More Scripts"
-More.TextColor3 = Color3.fromRGB(255, 255, 255)
-More.TextSize = 21.000
-More.TextWrapped = true
-
-UICorner_4.Parent = More
-
-Teleports.Name = "Teleports"
-Teleports.Parent = Frame
-Teleports.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Teleports.Position = UDim2.new(0.0391415693, 0, 0.606358469, 0)
-Teleports.Size = UDim2.new(0, 120, 0, 44)
-Teleports.Font = Enum.Font.SciFi
-Teleports.Text = "Teleports"
-Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
-Teleports.TextSize = 24.000
-Teleports.TextWrapped = true
-
-UICorner_5.Parent = Teleports
-
-TextButton.Parent = Teleports
-TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-TextButton.Position = UDim2.new(1.25, 0, -3.75, 0)
-TextButton.Size = UDim2.new(0, 135, 0, 45)
-TextButton.Font = Enum.Font.SciFi
-TextButton.Text = "Burger Shop"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 24.000
-TextButton.TextWrapped = true
-TextButton.MouseButton1Down:Connect(function()
-	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-275.294159, 19.7496624, -807.719727, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+MainScripts.Name = "Main Scripts"
+MainScripts.Parent = incognito
+MainScripts.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+MainScripts.Position = UDim2.new(0.0446407124, 0, 0.332439661, 0)
+MainScripts.Size = UDim2.new(0, 111, 0, 50)
+MainScripts.Font = Enum.Font.SourceSansBold
+MainScripts.Text = "Main Scripts"
+MainScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainScripts.TextSize = 21.000
+MainScripts.TextWrapped = true
+MainScripts.MouseButton1Down:Connect(function()
+	MainScripts_2.Visible = true
+	Teleports_2.Visible = false
+	OtherScripts_2.Visible = false
 end)
 
-Credits.Name = "Credits"
-Credits.Parent = Main
-Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Credits.BackgroundTransparency = 1.000
-Credits.Position = UDim2.new(0.814241409, 0, 0.905198753, 0)
-Credits.Size = UDim2.new(0, 120, 0, 31)
-Credits.Font = Enum.Font.SpecialElite
-Credits.Text = "Credits  dazypq | Ived"
-Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Credits.TextScaled = true
-Credits.TextSize = 14.000
-Credits.TextWrapped = true
+MainScripts_2.Name = "MainScripts"
+MainScripts_2.Parent = MainScripts
+MainScripts_2.Active = true
+MainScripts_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+MainScripts_2.Position = UDim2.new(1.05003452, 0, -2.61999989, 0)
+MainScripts_2.Size = UDim2.new(0, 590, 0, 387)
+MainScripts_2.Visible = false
+
+UICorner_2.Parent = MainScripts_2
+
+Fly.Name = "Fly"
+Fly.Parent = MainScripts_2
+Fly.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Fly.Position = UDim2.new(0.0576271117, 0, 0.0671834573, 0)
+Fly.Size = UDim2.new(0, 134, 0, 55)
+Fly.Font = Enum.Font.SourceSansBold
+Fly.Text = "Fly(X)"
+Fly.TextColor3 = Color3.fromRGB(252, 252, 252)
+Fly.TextSize = 45.000
+Fly.TextWrapped = true 
+Fly.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/TiPqmcy5"))()
+end)
+
+UICorner_3.Parent = Fly
+
+NoclipZ.Name = "Noclip(Z)"
+NoclipZ.Parent = MainScripts_2
+NoclipZ.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+NoclipZ.Position = UDim2.new(0.386440665, 0, 0.0671834573, 0)
+NoclipZ.Size = UDim2.new(0, 134, 0, 55)
+NoclipZ.Font = Enum.Font.SourceSansBold
+NoclipZ.Text = "NoClip(Z)"
+NoclipZ.TextColor3 = Color3.fromRGB(252, 252, 252)
+NoclipZ.TextSize = 35.000
+NoclipZ.TextWrapped = true
+NoclipZ.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/RLu9PRn6"))()
+end)
+
+
+UICorner_4.Parent = NoclipZ
+
+qtotp.Name = "qtotp"
+qtotp.Parent = MainScripts_2
+qtotp.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+qtotp.Position = UDim2.new(0.71355933, 0, 0.0671834573, 0)
+qtotp.Size = UDim2.new(0, 134, 0, 55)
+qtotp.Font = Enum.Font.SourceSansBold
+qtotp.Text = "Q to TP"
+qtotp.TextColor3 = Color3.fromRGB(252, 252, 252)
+qtotp.TextSize = 35.000
+qtotp.TextWrapped = true
+qtotp.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/cYK0Fz5y"))()
+end)
+
+UICorner_5.Parent = qtotp
+
+Teleports.Name = "Teleports"
+Teleports.Parent = incognito
+Teleports.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Teleports.Position = UDim2.new(0.0446407124, 0, 0.600536227, 0)
+Teleports.Size = UDim2.new(0, 111, 0, 50)
+Teleports.Font = Enum.Font.SourceSansBold
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 28.000
+Teleports.TextWrapped = true
+Teleports.MouseButton1Down:Connect(function()
+	MainScripts_2.Visible = false
+	Teleports_2.Visible = true
+	OtherScripts_2.Visible = false
+end)
+
+Teleports_2.Name = "Teleports"
+Teleports_2.Parent = Teleports
+Teleports_2.Active = true
+Teleports_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Teleports_2.Position = UDim2.new(1.050035, 0, -4.61999989, 0)
+Teleports_2.Size = UDim2.new(0, 590, 0, 387)
+Teleports_2.Visible = false
+
+UICorner_6.Parent = Teleports_2
+
+Burger.Name = "Burger"
+Burger.Parent = Teleports_2
+Burger.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Burger.Position = UDim2.new(0.04237286, 0, 0.0568475388, 0)
+Burger.Size = UDim2.new(0, 134, 0, 55)
+Burger.Font = Enum.Font.SourceSansBold
+Burger.Text = "Burger Shop"
+Burger.TextColor3 = Color3.fromRGB(252, 252, 252)
+Burger.TextSize = 28.000
+Burger.TextWrapped = true
+Burger.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/zdGnnivD"))()
+end)
+
+
+
+UICorner_7.Parent = Burger
+
+AdminBaseSoonFixed.Name = "AdminBase(Soon Fixed)"
+AdminBaseSoonFixed.Parent = Teleports_2
+AdminBaseSoonFixed.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+AdminBaseSoonFixed.Position = UDim2.new(0.04237286, 0, 0.268733829, 0)
+AdminBaseSoonFixed.Size = UDim2.new(0, 134, 0, 55)
+AdminBaseSoonFixed.Font = Enum.Font.SourceSansBold
+AdminBaseSoonFixed.Text = "AdminBase(Soon)"
+AdminBaseSoonFixed.TextColor3 = Color3.fromRGB(252, 252, 252)
+AdminBaseSoonFixed.TextSize = 19.000
+AdminBaseSoonFixed.TextWrapped = true
+
+UICorner_8.Parent = AdminBaseSoonFixed
+
+Gunshop.Name = "Gunshop"
+Gunshop.Parent = Teleports_2
+Gunshop.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Gunshop.Position = UDim2.new(0.752542377, 0, 0.0568475388, 0)
+Gunshop.Size = UDim2.new(0, 134, 0, 55)
+Gunshop.Font = Enum.Font.SourceSansBold
+Gunshop.Text = "Gun Shop"
+Gunshop.TextColor3 = Color3.fromRGB(252, 252, 252)
+Gunshop.TextSize = 28.000
+Gunshop.TextWrapped = true
+Gunshop.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Br6zrG17"))()
+end)
+
+UICorner_9.Parent = Gunshop
+
+School.Name = "School"
+School.Parent = Teleports_2
+School.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+School.Position = UDim2.new(0.513559282, 0, 0.0568475388, 0)
+School.Size = UDim2.new(0, 134, 0, 55)
+School.Font = Enum.Font.SourceSansBold
+School.Text = "School"
+School.TextColor3 = Color3.fromRGB(252, 252, 252)
+School.TextSize = 39.000
+School.TextWrapped = true
+School.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mn44JgXK"))()
+end)
+
+UICorner_10.Parent = School
+
+HighArmor.Name = "HighArmor"
+HighArmor.Parent = Teleports_2
+HighArmor.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+HighArmor.Position = UDim2.new(0.276271135, 0, 0.0568475388, 0)
+HighArmor.Size = UDim2.new(0, 134, 0, 55)
+HighArmor.Font = Enum.Font.SourceSansBold
+HighArmor.Text = "High Armor"
+HighArmor.TextColor3 = Color3.fromRGB(252, 252, 252)
+HighArmor.TextSize = 28.000
+HighArmor.TextWrapped = true
+HighArmor.MouseButton1Down:Connect(function() 
+	loadstring(game:HttpGet("https://pastebin.com/raw/ykGrdnv2"))()
+end)
+
+UICorner_11.Parent = HighArmor
+
+OtherScripts.Name = "Other Scripts"
+OtherScripts.Parent = incognito
+OtherScripts.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+OtherScripts.Position = UDim2.new(0.0446407124, 0, 0.466487944, 0)
+OtherScripts.Size = UDim2.new(0, 111, 0, 50)
+OtherScripts.Font = Enum.Font.SourceSansBold
+OtherScripts.Text = "Other Scripts"
+OtherScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherScripts.TextSize = 21.000
+OtherScripts.TextWrapped = true
+OtherScripts.MouseButton1Down:Connect(function()
+	MainScripts_2.Visible = false
+	Teleports_2.Visible = false
+	OtherScripts_2.Visible = true
+end)
+
+OtherScripts_2.Name = "Other Scripts"
+OtherScripts_2.Parent = OtherScripts
+OtherScripts_2.Active = true
+OtherScripts_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+OtherScripts_2.Position = UDim2.new(1.050035, 0, -3.61999965, 0)
+OtherScripts_2.Size = UDim2.new(0, 590, 0, 387)
+OtherScripts_2.Visible = false
+
+UICorner_12.Parent = OtherScripts_2
+
+line.Name = "line"
+line.Parent = incognito
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.Position = UDim2.new(0.0446407124, 0, 0.134048253, 0)
+line.Size = UDim2.new(0, 111, 0, 8)
+
+UICorner_13.Parent = line
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0111111123, 0, 0.852713168, 0)
+TextLabel.Size = UDim2.new(0, 122, 0, 50)
+TextLabel.Font = Enum.Font.SpecialElite
+TextLabel.Text = "Made By dazypq | Ived"
+TextLabel.TextColor3 = Color3.fromRGB(126, 126, 126)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
