@@ -19,37 +19,30 @@ wait(2)
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
-local incognito = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Incognito = Instance.new("TextLabel")
-local MainScripts = Instance.new("TextButton")
-local MainScripts_2 = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local Fly = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local NoclipZ = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local qtotp = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local Teleports = Instance.new("TextButton")
-local Teleports_2 = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local Burger = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local AdminBaseSoonFixed = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local Gunshop = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local School = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local HighArmor = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local OtherScripts = Instance.new("TextButton")
-local OtherScripts_2 = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+local incognito = Instance.new("TextLabel")
 local line = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local MainScripts = Instance.new("TextButton")
+local OtherScripts = Instance.new("TextButton")
+local Teleports = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local line_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Credits2 = Instance.new("TextLabel")
+local Credits3 = Instance.new("TextLabel")
+local OtherScripts_2 = Instance.new("Frame")
+local MainScripts_2 = Instance.new("Frame")
+local QTotp = Instance.new("TextButton")
+local NoClipz = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local Teleports_2 = Instance.new("Frame")
+local Burger = Instance.new("TextButton")
+local HighArmor = Instance.new("TextButton")
+local School = Instance.new("TextButton")
+local Gunshop = Instance.new("TextButton")
+local HighArmor_2 = Instance.new("TextButton")
+local Bank = Instance.new("TextButton")
+local School_2 = Instance.new("TextButton")
 
 
 
@@ -58,73 +51,212 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
 Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-Main.Position = UDim2.new(0.323832631, 0, 0.240490824, 0)
-Main.Size = UDim2.new(0, 720, 0, 387)
+Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Main.Position = UDim2.new(0.282783896, 0, 0.193865031, 0)
+Main.Size = UDim2.new(0, 603, 0, 338)
 Main.Draggable = true
 Main.Active = true
 
 incognito.Name = "incognito"
 incognito.Parent = Main
-incognito.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-incognito.Position = UDim2.new(0.0101718474, 0, 0.0180878546, 0)
-incognito.Size = UDim2.new(0, 122, 0, 373)
-Main.Draggable = true
-Main.Active = true
+incognito.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+incognito.BackgroundTransparency = 1.000
+incognito.Position = UDim2.new(-0.019900497, 0, 0, 0)
+incognito.Size = UDim2.new(0, 168, 0, 50)
+incognito.Font = Enum.Font.SourceSansBold
+incognito.Text = "Incognito"
+incognito.TextColor3 = Color3.fromRGB(254, 254, 254)
+incognito.TextSize = 35.000
+incognito.TextWrapped = true
 
-UICorner.CornerRadius = UDim.new(0, 6)
-UICorner.Parent = incognito
+line.Name = "line"
+line.Parent = Main
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.Position = UDim2.new(0.0184790418, 0, 0.139053226, 0)
+line.Size = UDim2.new(0, 120, 0, 3)
 
-Incognito.Name = "Incognito"
-Incognito.Parent = incognito
-Incognito.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Incognito.BackgroundTransparency = 1.000
-Incognito.Position = UDim2.new(0.0446406081, 0, 0, 0)
-Incognito.Size = UDim2.new(0, 111, 0, 50)
-Incognito.Font = Enum.Font.SourceSansBold
-Incognito.Text = "Incognito"
-Incognito.TextColor3 = Color3.fromRGB(255, 255, 255)
-Incognito.TextScaled = true
-Incognito.TextSize = 14.000
-Incognito.TextWrapped = true
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = line
 
-MainScripts.Name = "Main Scripts"
-MainScripts.Parent = incognito
-MainScripts.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-MainScripts.Position = UDim2.new(0.0446407124, 0, 0.332439661, 0)
-MainScripts.Size = UDim2.new(0, 111, 0, 50)
+MainScripts.Name = "MainScripts"
+MainScripts.Parent = Main
+MainScripts.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+MainScripts.Position = UDim2.new(0.0182421226, 0, 0.201183438, 0)
+MainScripts.Size = UDim2.new(0, 120, 0, 40)
 MainScripts.Font = Enum.Font.SourceSansBold
 MainScripts.Text = "Main Scripts"
 MainScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
-MainScripts.TextSize = 21.000
+MainScripts.TextSize = 20.000
 MainScripts.TextWrapped = true
 MainScripts.MouseButton1Down:Connect(function()
 	MainScripts_2.Visible = true
+	OtherScripts_2.Visible = false
 	Teleports_2.Visible = false
-	OtherScripts_2.Visible = false -- 
 end)
 
+OtherScripts.Name = "OtherScripts"
+OtherScripts.Parent = Main
+OtherScripts.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+OtherScripts.Position = UDim2.new(0.019900497, 0, 0.372781068, 0)
+OtherScripts.Size = UDim2.new(0, 120, 0, 40)
+OtherScripts.Font = Enum.Font.SourceSansBold
+OtherScripts.Text = "Other Scripts"
+OtherScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherScripts.TextSize = 20.000
+OtherScripts.TextWrapped = true
+OtherScripts.MouseButton1Down:Connect(function()
+	MainScripts_2.Visible = false
+	OtherScripts_2.Visible = true
+	Teleports_2.Visible = false
+end)
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Main
+Teleports.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Teleports.Position = UDim2.new(0.019900497, 0, 0.559171617, 0)
+Teleports.Size = UDim2.new(0, 120, 0, 40)
+Teleports.Font = Enum.Font.SourceSansBold
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 26.000
+Teleports.TextWrapped = true
+Teleports.MouseButton1Down:Connect(function()
+	MainScripts_2.Visible = false
+	OtherScripts_2.Visible = false
+	Teleports_2.Visible = true
+end)
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(-0.0381426215, 0, 0.784023643, 0)
+Credits.Size = UDim2.new(0, 115, 0, 26)
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+line_2.Name = "line"
+line_2.Parent = Credits
+line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line_2.Position = UDim2.new(0.198578477, 0, 0.970414162, 0)
+line_2.Size = UDim2.new(0, 77, 0, 3)
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = line_2
+
+Credits2.Name = "Credits2"
+Credits2.Parent = Main
+Credits2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits2.BackgroundTransparency = 1.000
+Credits2.Position = UDim2.new(-0.0231267568, 0, 0.867342353, 0)
+Credits2.Size = UDim2.new(0, 90, 0, 22)
+Credits2.Font = Enum.Font.SourceSansBold
+Credits2.Text = "dazypq"
+Credits2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits2.TextScaled = true
+Credits2.TextSize = 14.000
+Credits2.TextWrapped = true
+
+Credits3.Name = "Credits3"
+Credits3.Parent = Main
+Credits3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits3.BackgroundTransparency = 1.000
+Credits3.Position = UDim2.new(-0.106045499, 0, 0.932431102, 0)
+Credits3.Size = UDim2.new(0, 169, 0, 22)
+Credits3.Font = Enum.Font.SourceSansBold
+Credits3.Text = "Ived"
+Credits3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits3.TextScaled = true
+Credits3.TextSize = 14.000
+Credits3.TextWrapped = true
+
+OtherScripts_2.Name = "OtherScripts"
+OtherScripts_2.Parent = Main
+OtherScripts_2.Active = true
+OtherScripts_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+OtherScripts_2.Position = UDim2.new(0.238805965, 0, 0, 0)
+OtherScripts_2.Size = UDim2.new(0, 459, 0, 337)
+OtherScripts_2.Visible = false
+
 MainScripts_2.Name = "MainScripts"
-MainScripts_2.Parent = MainScripts
+MainScripts_2.Parent = Main
 MainScripts_2.Active = true
-MainScripts_2.Draggable = true
-MainScripts_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-MainScripts_2.Position = UDim2.new(1.05003452, 0, -2.61999989, 0)
-MainScripts_2.Size = UDim2.new(0, 590, 0, 387)
+MainScripts_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+MainScripts_2.Position = UDim2.new(0.238805965, 0, 0, 0)
+MainScripts_2.Size = UDim2.new(0, 459, 0, 337)
 MainScripts_2.Visible = false
 
-UICorner_2.Parent = MainScripts_2
+QTotp.Name = "QTotp"
+QTotp.Parent = MainScripts_2
+QTotp.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+QTotp.Position = UDim2.new(0.0435729846, 0, 0.0623145401, 0)
+QTotp.Size = UDim2.new(0, 122, 0, 47)
+QTotp.Font = Enum.Font.SourceSansBold
+QTotp.Text = "Q To Tp"
+QTotp.TextColor3 = Color3.fromRGB(255, 255, 255)
+QTotp.TextSize = 25.000
+QTotp.MouseButton1Down:Connect(function()
+	plr = game.Players.LocalPlayer
+
+	hum = plr.Character.HumanoidRootPart
+
+	mouse = plr:GetMouse()
+
+
+
+	mouse.KeyDown:connect(function(key)
+
+		if key == "q" then
+			if mouse.Target then
+
+				hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+			end
+
+		end
+	end)
+end)
+
+NoClipz.Name = "NoClip(z)"
+NoClipz.Parent = MainScripts_2
+NoClipz.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+NoClipz.Position = UDim2.new(0.620915055, 0, 0.0623145401, 0)
+NoClipz.Size = UDim2.new(0, 122, 0, 47)
+NoClipz.Font = Enum.Font.SourceSansBold
+NoClipz.Text = "No Clip(Z)"
+NoClipz.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoClipz.TextSize = 25.000
+NoClipz.MouseButton1Down:Connect(function()
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+
+		if key == "z" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+end)
 
 Fly.Name = "Fly"
 Fly.Parent = MainScripts_2
-Fly.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-Fly.Position = UDim2.new(0.0576271117, 0, 0.0671834573, 0)
-Fly.Size = UDim2.new(0, 134, 0, 55)
+Fly.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Fly.Position = UDim2.new(0.333333343, 0, 0.0623145401, 0)
+Fly.Size = UDim2.new(0, 122, 0, 47)
 Fly.Font = Enum.Font.SourceSansBold
 Fly.Text = "Fly(X)"
-Fly.TextColor3 = Color3.fromRGB(252, 252, 252)
-Fly.TextSize = 45.000
-Fly.TextWrapped = true 
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 25.000
 Fly.MouseButton1Down:Connect(function()
 	repeat wait() 
 	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
@@ -136,8 +268,8 @@ Fly.MouseButton1Down:Connect(function()
 	local deb = true 
 	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
 	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
-	local maxspeed = 50 
-	local speed = 0 
+	local maxspeed = 400 
+	local speed = 5000 
 
 	function Fly() 
 		local bg = Instance.new("BodyGyro", torso) 
@@ -150,7 +282,7 @@ Fly.MouseButton1Down:Connect(function()
 		repeat wait() 
 			plr.Character.Humanoid.PlatformStand = true 
 			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
-				speed = speed+.5+(speed/maxspeed) 
+				speed = speed+.10+(speed/maxspeed) 
 				if speed > maxspeed then 
 					speed = maxspeed 
 				end 
@@ -208,222 +340,89 @@ Fly.MouseButton1Down:Connect(function()
 	Fly()
 end)
 
-UICorner_3.Parent = Fly
-
-NoclipZ.Name = "Noclip(Z)"
-NoclipZ.Parent = MainScripts_2
-NoclipZ.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-NoclipZ.Position = UDim2.new(0.386440665, 0, 0.0671834573, 0)
-NoclipZ.Size = UDim2.new(0, 134, 0, 55)
-NoclipZ.Font = Enum.Font.SourceSansBold
-NoclipZ.Text = "NoClip(Z)"
-NoclipZ.TextColor3 = Color3.fromRGB(252, 252, 252)
-NoclipZ.TextSize = 35.000
-NoclipZ.TextWrapped = true
-NoclipZ.MouseButton1Down:Connect(function()
-	noclip = false
-	game:GetService('RunService').Stepped:connect(function()
-		if noclip then
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
-	end)
-	plr = game.Players.LocalPlayer
-	mouse = plr:GetMouse()
-	mouse.KeyDown:connect(function(key)
-
-		if key == "z" then
-			noclip = not noclip
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
-	end)
-end)
-
-
-UICorner_4.Parent = NoclipZ
-
-qtotp.Name = "qtotp"
-qtotp.Parent = MainScripts_2
-qtotp.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-qtotp.Position = UDim2.new(0.71355933, 0, 0.0671834573, 0)
-qtotp.Size = UDim2.new(0, 134, 0, 55)
-qtotp.Font = Enum.Font.SourceSansBold
-qtotp.Text = "Q to TP"
-qtotp.TextColor3 = Color3.fromRGB(252, 252, 252)
-qtotp.TextSize = 35.000
-qtotp.TextWrapped = true
-qtotp.MouseButton1Down:Connect(function()
-	plr = game.Players.LocalPlayer
-
-	hum = plr.Character.HumanoidRootPart
-
-	mouse = plr:GetMouse()
-
-
-
-	mouse.KeyDown:connect(function(key)
-
-		if key == "q" then
-			if mouse.Target then
-
-				hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
-
-			end
-
-		end
-	end)
-end)
-
-UICorner_5.Parent = qtotp
-
-Teleports.Name = "Teleports"
-Teleports.Parent = incognito
-Teleports.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-Teleports.Position = UDim2.new(0.0446407124, 0, 0.600536227, 0)
-Teleports.Size = UDim2.new(0, 111, 0, 50)
-Teleports.Font = Enum.Font.SourceSansBold
-Teleports.Text = "Teleports"
-Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
-Teleports.TextSize = 28.000
-Teleports.TextWrapped = true
-Teleports.MouseButton1Down:Connect(function()
-	MainScripts_2.Visible = false
-	Teleports_2.Visible = true
-	OtherScripts_2.Visible = false
-end)
-
 Teleports_2.Name = "Teleports"
-Teleports_2.Parent = Teleports
+Teleports_2.Parent = Main
 Teleports_2.Active = true
-Teleports_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-Teleports_2.Position = UDim2.new(1.050035, 0, -4.61999989, 0)
-Teleports_2.Size = UDim2.new(0, 590, 0, 387)
+Teleports_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Teleports_2.Position = UDim2.new(0.238805965, 0, 0, 0)
+Teleports_2.Size = UDim2.new(0, 459, 0, 337)
 Teleports_2.Visible = false
-Teleports_2.Draggable = true
-
-UICorner_6.Parent = Teleports_2
 
 Burger.Name = "Burger"
 Burger.Parent = Teleports_2
-Burger.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-Burger.Position = UDim2.new(0.04237286, 0, 0.0568475388, 0)
-Burger.Size = UDim2.new(0, 134, 0, 55)
+Burger.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Burger.Position = UDim2.new(0.0435729846, 0, 0.0623145401, 0)
+Burger.Size = UDim2.new(0, 122, 0, 47)
 Burger.Font = Enum.Font.SourceSansBold
 Burger.Text = "Burger Shop"
-Burger.TextColor3 = Color3.fromRGB(252, 252, 252)
-Burger.TextSize = 28.000
-Burger.TextWrapped = true
+Burger.TextColor3 = Color3.fromRGB(255, 255, 255)
+Burger.TextSize = 25.000
 Burger.MouseButton1Down:Connect(function()
 	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-275.294159, 19.7496624, -807.719727, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end)
 
-
-
-UICorner_7.Parent = Burger
-
-AdminBaseSoonFixed.Name = "AdminBase(Soon Fixed)"
-AdminBaseSoonFixed.Parent = Teleports_2
-AdminBaseSoonFixed.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-AdminBaseSoonFixed.Position = UDim2.new(0.04237286, 0, 0.268733829, 0)
-AdminBaseSoonFixed.Size = UDim2.new(0, 134, 0, 55)
-AdminBaseSoonFixed.Font = Enum.Font.SourceSansBold
-AdminBaseSoonFixed.Text = "AdminBase(Soon)"
-AdminBaseSoonFixed.TextColor3 = Color3.fromRGB(252, 252, 252)
-AdminBaseSoonFixed.TextSize = 19.000
-AdminBaseSoonFixed.TextWrapped = true
-
-UICorner_8.Parent = AdminBaseSoonFixed
-
-Gunshop.Name = "Gunshop"
-Gunshop.Parent = Teleports_2
-Gunshop.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-Gunshop.Position = UDim2.new(0.752542377, 0, 0.0568475388, 0)
-Gunshop.Size = UDim2.new(0, 134, 0, 55)
-Gunshop.Font = Enum.Font.SourceSansBold
-Gunshop.Text = "Gun Shop"
-Gunshop.TextColor3 = Color3.fromRGB(252, 252, 252)
-Gunshop.TextSize = 28.000
-Gunshop.TextWrapped = true
-Gunshop.MouseButton1Down:Connect(function()
-	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-578.623657, 5.47212696, -725.131531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+HighArmor.Name = "HighArmor"
+HighArmor.Parent = Teleports_2
+HighArmor.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+HighArmor.Position = UDim2.new(0.333333343, 0, 0.0623145401, 0)
+HighArmor.Size = UDim2.new(0, 122, 0, 47)
+HighArmor.Font = Enum.Font.SourceSansBold
+HighArmor.Text = "HighArmor"
+HighArmor.TextColor3 = Color3.fromRGB(255, 255, 255)
+HighArmor.TextSize = 25.000
+HighArmor.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-934.025024, -28.149828, 570.549683, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end)
-
-UICorner_9.Parent = Gunshop
 
 School.Name = "School"
 School.Parent = Teleports_2
-School.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-School.Position = UDim2.new(0.513559282, 0, 0.0568475388, 0)
-School.Size = UDim2.new(0, 134, 0, 55)
+School.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+School.Position = UDim2.new(0.625272334, 0, 0.0623145401, 0)
+School.Size = UDim2.new(0, 122, 0, 47)
 School.Font = Enum.Font.SourceSansBold
 School.Text = "School"
-School.TextColor3 = Color3.fromRGB(252, 252, 252)
-School.TextSize = 39.000
-School.TextWrapped = true
+School.TextColor3 = Color3.fromRGB(255, 255, 255)
+School.TextSize = 25.000
 School.MouseButton1Down:Connect(function()
 	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-574.742615, 20.7063103, 370.690186, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 end)
 
-UICorner_10.Parent = School
-
-HighArmor.Name = "HighArmor"
-HighArmor.Parent = Teleports_2
-HighArmor.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-HighArmor.Position = UDim2.new(0.276271135, 0, 0.0568475388, 0)
-HighArmor.Size = UDim2.new(0, 134, 0, 55)
-HighArmor.Font = Enum.Font.SourceSansBold
-HighArmor.Text = "High Armor"
-HighArmor.TextColor3 = Color3.fromRGB(252, 252, 252)
-HighArmor.TextSize = 28.000
-HighArmor.TextWrapped = true
-HighArmor.MouseButton1Down:Connect(function() 
-	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-934.025024, -28.149828, 570.549683, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Gunshop.Name = "Gunshop"
+Gunshop.Parent = Teleports_2
+Gunshop.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Gunshop.Position = UDim2.new(0.0435729921, 0, 0.234421372, 0)
+Gunshop.Size = UDim2.new(0, 122, 0, 47)
+Gunshop.Font = Enum.Font.SourceSansBold
+Gunshop.Text = "Gun Shop"
+Gunshop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gunshop.TextSize = 25.000
+Gunshop.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-578.623657, 5.47212696, -725.131531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 end)
 
-UICorner_11.Parent = HighArmor
 
-OtherScripts.Name = "Other Scripts"
-OtherScripts.Parent = incognito
-OtherScripts.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-OtherScripts.Position = UDim2.new(0.0446407124, 0, 0.466487944, 0)
-OtherScripts.Size = UDim2.new(0, 111, 0, 50)
-OtherScripts.Font = Enum.Font.SourceSansBold
-OtherScripts.Text = "Other Scripts"
-OtherScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
-OtherScripts.TextSize = 21.000
-OtherScripts.TextWrapped = true
-OtherScripts.MouseButton1Down:Connect(function()
-	MainScripts_2.Visible = false
-	Teleports_2.Visible = false
-	OtherScripts_2.Visible = true
+Bank.Name = "Bank"
+Bank.Parent = Teleports_2
+Bank.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Bank.Position = UDim2.new(0.333333343, 0, 0.234421372, 0)
+Bank.Size = UDim2.new(0, 122, 0, 47)
+Bank.Font = Enum.Font.SourceSansBold
+Bank.Text = "Bank"
+Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bank.TextSize = 25.000
+Bank.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-427.011505, 23.2010956, -284.729401, 0.00109833479, 6.08042174e-05, -0.999999404, 0.000427238556, 0.999999881, 6.12735166e-05, 0.999999285, -0.000427305582, 0.00109833479)
 end)
 
-OtherScripts_2.Name = "Other Scripts"
-OtherScripts_2.Parent = OtherScripts
-OtherScripts_2.Active = true
-OtherScripts_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-OtherScripts_2.Position = UDim2.new(1.050035, 0, -3.61999965, 0)
-OtherScripts_2.Size = UDim2.new(0, 590, 0, 387)
-OtherScripts_2.Visible = false
-OtherScripts_2.Draggable = true
-
-UICorner_12.Parent = OtherScripts_2
-
-line.Name = "line"
-line.Parent = incognito
-line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-line.Position = UDim2.new(0.0446407124, 0, 0.134048253, 0)
-line.Size = UDim2.new(0, 111, 0, 8)
-
-UICorner_13.Parent = line
-
-TextLabel.Parent = Main
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0111111123, 0, 0.852713168, 0)
-TextLabel.Size = UDim2.new(0, 122, 0, 50)
-TextLabel.Font = Enum.Font.SpecialElite
-TextLabel.Text = "Made By dazypq | Ived"
-TextLabel.TextColor3 = Color3.fromRGB(126, 126, 126)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+School_2.Name = "School"
+School_2.Parent = Teleports_2
+School_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+School_2.Position = UDim2.new(0.625272334, 0, 0.234421372, 0)
+School_2.Size = UDim2.new(0, 122, 0, 47)
+School_2.Font = Enum.Font.SourceSansBold
+School_2.Text = "Admin Base"
+School_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+School_2.TextSize = 25.000
+School_2.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-800.960022, -42.5478363, -931.500061, 5.96046448e-08, 0.000122077763, 1, -0.000610388757, 0.999999821, -0.000122077705, -0.999999762, -0.000610388757, 1.1920929e-07)
+end)
