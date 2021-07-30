@@ -201,7 +201,7 @@ QTotp.Font = Enum.Font.SourceSansBold
 QTotp.Text = "Q To Tp"
 QTotp.TextColor3 = Color3.fromRGB(255, 255, 255)
 QTotp.TextSize = 25.000
-qtotp.MouseButton1Down:Connect(function()
+QTotp.MouseButton1Down:Connect(function()
 	plr = game.Players.LocalPlayer
 
 	hum = plr.Character.HumanoidRootPart
@@ -270,8 +270,8 @@ Fly.MouseButton1Down:Connect(function()
 	local deb = true 
 	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
 	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
-	local maxspeed = 50 
-	local speed = 35 
+	local maxspeed = 10000 
+	local speed = 7000 
 
 	function Fly() 
 		local bg = Instance.new("BodyGyro", torso) 
