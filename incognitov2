@@ -3,6 +3,16 @@ game.StarterGui:SetCore("SendNotification", {
 	Text = "Executed | Thank You for Using Incognito";
 	Duration = 7;
 })
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Credits";
+	Text = "Made By dazypq | Ived";
+	Duration = 7;
+})
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Speical Credits";
+	Text = "Big Thanks For imie For saving life";
+	Duration = 10;
+})
 
 setclipboard('Incognito on top')
 wait(2)
@@ -43,7 +53,7 @@ local TextLabel = Instance.new("TextLabel")
 
 
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
@@ -51,12 +61,16 @@ Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 Main.Position = UDim2.new(0.323832631, 0, 0.240490824, 0)
 Main.Size = UDim2.new(0, 720, 0, 387)
+Main.Draggable = true
+Main.Active = true
 
 incognito.Name = "incognito"
 incognito.Parent = Main
 incognito.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
 incognito.Position = UDim2.new(0.0101718474, 0, 0.0180878546, 0)
 incognito.Size = UDim2.new(0, 122, 0, 373)
+Main.Draggable = true
+Main.Active = true
 
 UICorner.CornerRadius = UDim.new(0, 6)
 UICorner.Parent = incognito
@@ -87,12 +101,13 @@ MainScripts.TextWrapped = true
 MainScripts.MouseButton1Down:Connect(function()
 	MainScripts_2.Visible = true
 	Teleports_2.Visible = false
-	OtherScripts_2.Visible = false
+	OtherScripts_2.Visible = false -- 
 end)
 
 MainScripts_2.Name = "MainScripts"
 MainScripts_2.Parent = MainScripts
 MainScripts_2.Active = true
+MainScripts_2.Draggable = true
 MainScripts_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 MainScripts_2.Position = UDim2.new(1.05003452, 0, -2.61999989, 0)
 MainScripts_2.Size = UDim2.new(0, 590, 0, 387)
@@ -111,7 +126,86 @@ Fly.TextColor3 = Color3.fromRGB(252, 252, 252)
 Fly.TextSize = 45.000
 Fly.TextWrapped = true 
 Fly.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/TiPqmcy5"))()
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 50 
+	local speed = 0 
+
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.5+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+	mouse.KeyDown:connect(function(key) 
+		if key:lower() == "x" then 
+			if flying then flying = false 
+			else 
+				flying = true 
+				Fly() 
+			end 
+		elseif key:lower() == "w" then 
+			ctrl.f = 1 
+		elseif key:lower() == "s" then 
+			ctrl.b = -1 
+		elseif key:lower() == "a" then 
+			ctrl.l = -1 
+		elseif key:lower() == "d" then 
+			ctrl.r = 1 
+		end 
+	end) 
+	mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+			ctrl.f = 0 
+		elseif key:lower() == "s" then 
+			ctrl.b = 0 
+		elseif key:lower() == "a" then 
+			ctrl.l = 0 
+		elseif key:lower() == "d" then 
+			ctrl.r = 0 
+		end 
+	end)
+	Fly()
 end)
 
 UICorner_3.Parent = Fly
@@ -127,7 +221,21 @@ NoclipZ.TextColor3 = Color3.fromRGB(252, 252, 252)
 NoclipZ.TextSize = 35.000
 NoclipZ.TextWrapped = true
 NoclipZ.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/RLu9PRn6"))()
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+
+		if key == "z" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
 end)
 
 
@@ -144,7 +252,25 @@ qtotp.TextColor3 = Color3.fromRGB(252, 252, 252)
 qtotp.TextSize = 35.000
 qtotp.TextWrapped = true
 qtotp.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/cYK0Fz5y"))()
+	plr = game.Players.LocalPlayer
+
+	hum = plr.Character.HumanoidRootPart
+
+	mouse = plr:GetMouse()
+
+
+
+	mouse.KeyDown:connect(function(key)
+
+		if key == "q" then
+			if mouse.Target then
+
+				hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+			end
+
+		end
+	end)
 end)
 
 UICorner_5.Parent = qtotp
@@ -172,6 +298,7 @@ Teleports_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 Teleports_2.Position = UDim2.new(1.050035, 0, -4.61999989, 0)
 Teleports_2.Size = UDim2.new(0, 590, 0, 387)
 Teleports_2.Visible = false
+Teleports_2.Draggable = true
 
 UICorner_6.Parent = Teleports_2
 
@@ -186,7 +313,7 @@ Burger.TextColor3 = Color3.fromRGB(252, 252, 252)
 Burger.TextSize = 28.000
 Burger.TextWrapped = true
 Burger.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/zdGnnivD"))()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-275.294159, 19.7496624, -807.719727, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end)
 
 
@@ -217,7 +344,7 @@ Gunshop.TextColor3 = Color3.fromRGB(252, 252, 252)
 Gunshop.TextSize = 28.000
 Gunshop.TextWrapped = true
 Gunshop.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/Br6zrG17"))()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-578.623657, 5.47212696, -725.131531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 end)
 
 UICorner_9.Parent = Gunshop
@@ -233,7 +360,7 @@ School.TextColor3 = Color3.fromRGB(252, 252, 252)
 School.TextSize = 39.000
 School.TextWrapped = true
 School.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/mn44JgXK"))()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-574.742615, 20.7063103, 370.690186, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 end)
 
 UICorner_10.Parent = School
@@ -249,7 +376,7 @@ HighArmor.TextColor3 = Color3.fromRGB(252, 252, 252)
 HighArmor.TextSize = 28.000
 HighArmor.TextWrapped = true
 HighArmor.MouseButton1Down:Connect(function() 
-	loadstring(game:HttpGet("https://pastebin.com/raw/ykGrdnv2"))()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-934.025024, -28.149828, 570.549683, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end)
 
 UICorner_11.Parent = HighArmor
@@ -277,6 +404,7 @@ OtherScripts_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 OtherScripts_2.Position = UDim2.new(1.050035, 0, -3.61999965, 0)
 OtherScripts_2.Size = UDim2.new(0, 590, 0, 387)
 OtherScripts_2.Visible = false
+OtherScripts_2.Draggable = true
 
 UICorner_12.Parent = OtherScripts_2
 
